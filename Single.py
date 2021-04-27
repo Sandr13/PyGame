@@ -13,7 +13,7 @@ display = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption('Title')
 
 ################### Класс объекта-игрока ###################
-class Player(pygame.sprite.Sprite):
+class Player():
     def __init__(self):
         self.width = 100
         self.height = 100
