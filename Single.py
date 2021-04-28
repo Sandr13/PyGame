@@ -38,18 +38,6 @@ def run_game():
         ################### Рисуем игрока ###################
         pygame.draw.rect(display, (255, 255, 0), (user1.x, user1.y, user1.width, user1.height))
 
-        ################### Инициализируем клавиатуру ###################
-        keys = pygame.key.get_pressed()
-
-        if keys[pygame.K_w]:
-            user1.y -= user1.speed
-        elif keys[pygame.K_a]:
-            user1.x -= user1.speed
-        elif keys[pygame.K_s]:
-            user1.y += user1.speed
-        elif keys[pygame.K_d]:
-            user1.x += user1.speed
-
         pygame.display.update() # обновляем наш дисплей
 
 run_game()
